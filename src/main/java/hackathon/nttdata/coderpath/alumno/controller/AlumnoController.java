@@ -56,7 +56,7 @@ public class AlumnoController {
 
 	private final KafkaProducer producer;
 
-	final String urlServer = "http://localhost:8090/api/alumnowebflux";
+	final String urlServer = "http://localhost:8090/api/alumno";
 
 	//// validadores de conexion webclient
 	@GetMapping("/{param}")
