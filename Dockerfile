@@ -11,6 +11,6 @@ RUN mvn -f /home/app/pom.xml clean package
 # Package stage
 #
 FROM openjdk:17-alpine
-EXPOSE 80
+EXPOSE 57963
 COPY --from=build /home/app/target/alumno-0.0.1-SNAPSHOT.jar app/app.jar
 ENTRYPOINT ["java", "-jar","/app/app.jar"]
